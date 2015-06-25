@@ -1,0 +1,11 @@
+<?php
+// Add as core namespace (add package namespace to global)
+Autoloader::add_core_namespace('Mymath');
+
+// And add the classes, this is usefull for:
+// - optimization: no path searching is necessary
+// - it's required to be able to use as a core namespace
+// - if you want to break the autoloader's path search rules
+Autoloader::add_classes(array(
+	'Mymath\\BasicOperator'                        => __DIR__.'/classes/basicOperator.php',
+));

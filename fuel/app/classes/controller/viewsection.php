@@ -38,8 +38,9 @@ class Controller_ViewSection extends Controller {
          $data['footer_content'] = '<b>day la page footer tu controller</b>';
          
          //assign views as variables, forced redering
+         //set 'auto_filter_output'  => false, trong app/config de khong bi escape
          $views = array();
-         $views['header'] = View::forge('trainingFuel/header',$data,false)->render();
+         $views['header'] = View::forge('trainingFuel/header',$data)->render();
          $views['content'] = View::forge('trainingFuel/content',$data,false)->render();
          $views['footer'] = View::forge('trainingFuel/footer',$data,false)->render();
          
