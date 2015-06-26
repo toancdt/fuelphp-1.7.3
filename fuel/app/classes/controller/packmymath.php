@@ -6,7 +6,7 @@ class Controller_PackMyMath extends Controller {
          Package::load('mymath');
          $bo = new BasicOperator();
          $result = $bo->cong(2,3);
-         echo $result;
+         echo $result."<br>";
     }
 }
 ?>

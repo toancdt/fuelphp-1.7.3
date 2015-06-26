@@ -1,7 +1,10 @@
 <?php
+
+namespace Presenter;
+
 use \model\PageInfo;
 
-class Presenter_PreExam extends Presenter {
+class PreExam extends \Presenter {
     public function view() {
         $this->content = PageInfo::getPageTitle();
     }
