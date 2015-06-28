@@ -6,4 +6,5 @@ class NameSpacePres extends \Presenter {
         $this->content = 'presenter nay co su dung namespace';
     }
 }
+
 ?>
