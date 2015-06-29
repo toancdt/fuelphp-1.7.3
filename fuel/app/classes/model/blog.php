@@ -11,7 +11,7 @@ class Model_Blog extends \Orm\Model {
         'body' => array(
             'data_type' => 'string',
             'label' => 'Noi Dung',
-            'Validation' => array('required'),
+            'validation' => array('required'),
             'form' => array('type' => 'textarea'),
         ),
         'note' => array(
