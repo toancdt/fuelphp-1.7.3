@@ -1,16 +1,16 @@
 <?php
-class Controller_Blog extends \Controller_Template {
+class Controller_Blog111 extends Controller_Template {
     
     public $template = "blogtemplate";
     
-    function action_index() {
+    public function action_index() {
         $blog = \Model_Blog::find('all');
         $view = \View::forge('listBlog');
         $view->set('blogs', $blog, false);
         $this->template->content = $view;
     }
     
-    function action_add() {
+    public function action_add() {
         $fieldset = Fieldset::forge()->add_model('Model_Blog');
         $form = $fieldset->form();
         $form->add('submit', '', array('type' => 'submit', 'value' => 'Add', 'class' => 'btn medium primary'));
@@ -35,7 +35,7 @@ class Controller_Blog extends \Controller_Template {
         $this->template->set('content', $form->build(),false);
     }
     
-    function action_edit($id) {
+    public function action_edit($id) {
         $blog = \Model_Blog::find($id);
         $fieldset = Fieldset::forge()->add_model('Model_Blog')->populate($blog);
         $form = $fieldset->form();

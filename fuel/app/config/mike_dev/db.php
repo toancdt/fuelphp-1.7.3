@@ -10,7 +10,7 @@ return array(
 		'connection'    => array(
 		    'hostname'      => 'localhost',
 		    'port'          => '3306',
-		    'database'      => 'fuel_mike_dev',
+		    'database'      => 'dbtest',
 			'username'      => 'root',
 			'password'      => 'root',
 		    'persistent'    => false,
