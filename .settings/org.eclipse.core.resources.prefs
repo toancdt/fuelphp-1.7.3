@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
 encoding//fuel/app/classes/controller/example.php=UTF-8
-encoding//fuel/app/modules/blog/views/editblog.php=UTF-8
-encoding//fuel/app/modules/blog/views/listblog.php=UTF-8
-encoding//fuel/app/modules/blog/views/makenewblog.php=UTF-8
+encoding//fuel/app/modules/blogmodul/views/editblog.php=UTF-8
+encoding//fuel/app/modules/blogmodul/views/listblog.php=UTF-8
+encoding//fuel/app/modules/blogmodul/views/makenewblog.php=UTF-8

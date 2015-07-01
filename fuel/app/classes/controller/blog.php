@@ -1,5 +1,5 @@
 <?php
-class Controller_Blog111 extends Controller_Template {
+class Controller_Blog extends Controller_Template {
     
     public $template = "blogtemplate";
     

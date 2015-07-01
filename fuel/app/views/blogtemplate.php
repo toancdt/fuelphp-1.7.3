@@ -16,7 +16,7 @@
             <ul>
             <?php 
                 foreach($messages as $message) {
-                    echo '<li>', $message,'</li>';
+                    echo '<li>'. $message.'</li>';
                 }
             ?>
             </ul>
